@@ -13,5 +13,5 @@ def input_divide():
     except Exception as e:
         print(e)
         input_divide()
-
+divide(10,0)
 input_divide()
