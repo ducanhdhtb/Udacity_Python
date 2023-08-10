@@ -11,5 +11,6 @@ def multiply(x, y):
     """
     return x * y
 
+
 # Sử dụng lệnh help để xem docstring của hàm multiply
 help(multiply)

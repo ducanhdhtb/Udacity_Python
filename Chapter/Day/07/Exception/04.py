@@ -14,7 +14,7 @@ def validate_email(email):
     return True
 
 
-#email_address = 'hello@udacity.com'
+# email_address = 'hello@udacity.com'
 email_address = 1
 try:
     if validate_email(email_address):

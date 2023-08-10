@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class MenuItem(ABC):
 
     def __init__(self, name, price):
@@ -14,6 +15,7 @@ class MenuItem(ABC):
     def serve(self):
         pass
 
+
 class Dish(MenuItem):
 
     def prepare(self):
@@ -21,6 +23,7 @@ class Dish(MenuItem):
 
     def serve(self):
         print(f"Serving {self.name} for ${self.price}")
+
 
 class Drink(MenuItem):
 
@@ -30,12 +33,12 @@ class Drink(MenuItem):
     def serve(self):
         print(f"Serving {self.name} for ${self.price}")
 
+
 menu_items = [Dish("Pasta", 12.99), Drink("Soda", 2.99)]
 
 for item in menu_items:
     item.prepare()
     item.serve()
-
 
 # Trong ví dụ này:
 #

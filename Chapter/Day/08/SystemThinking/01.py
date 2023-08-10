@@ -10,8 +10,6 @@ class IceCream(FoodInterface):
 
 
 class HotDog(FoodInterface):
-    def __init__(self,meat):
+    def __init__(self, meat):
         self.meat = meat
         super().__init__(True)
-
-

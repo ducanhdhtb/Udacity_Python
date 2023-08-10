@@ -13,9 +13,11 @@ def power(base, exponent):
     """
     return base ** exponent
 
+
 def greet(name):
     """Greet the person by name."""
     print(f"Hello, {name}!")
+
 
 # Sử dụng lệnh help để xem docstring
 help(power)

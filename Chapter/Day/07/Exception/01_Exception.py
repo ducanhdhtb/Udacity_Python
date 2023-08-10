@@ -1,9 +1,10 @@
-#print(x)
+# print(x)
 
 def divide(a, b):
     if b == 0:
         raise Exception("Cannot Divide by Zero")
-    return a/b
+    return a / b
+
 
 def input_divide():
     try:
@@ -13,5 +14,7 @@ def input_divide():
     except Exception as e:
         print(e)
         input_divide()
-divide(10,0)
+
+
+divide(10, 0)
 input_divide()

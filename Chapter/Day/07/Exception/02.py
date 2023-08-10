@@ -13,6 +13,7 @@ def validate_email(email):
 
     return True
 
-#validate_email(1)
-#validate_email("hello@udacity")
+
+# validate_email(1)
+# validate_email("hello@udacity")
 validate_email("hello@udacity.com")

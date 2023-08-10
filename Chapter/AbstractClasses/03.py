@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Account(ABC):
 
     def __init__(self, account_number, balance):
@@ -14,6 +15,7 @@ class Account(ABC):
     def withdraw(self, amount):
         pass
 
+
 class SavingsAccount(Account):
 
     def deposit(self, amount):
@@ -27,6 +29,7 @@ class SavingsAccount(Account):
         else:
             print("Insufficient funds.")
 
+
 class CheckingAccount(Account):
 
     def deposit(self, amount):
@@ -39,6 +42,7 @@ class CheckingAccount(Account):
             print(f"Withdrew ${amount} from Checking Account {self.account_number}. New balance: ${self.balance}")
         else:
             print("Insufficient funds.")
+
 
 savings_account = SavingsAccount("SA123", 1000)
 checking_account = CheckingAccount("CA456", 2000)
